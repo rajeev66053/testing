@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="menu_styles.css">
+   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="menu_script.js"></script>
+  
+  
+  <link rel="stylesheet" href="music/simpleplaylist.css" type="text/css">
+  <script src="music/jquery.simpleplaylist.js"></script>
+  
+   <style>
+   <!--Side bar-->
+		  
+		*{
+		  box-sizing: border-box;
+		}
+		body{
+		  height:100%;
+		 /* background-color: #444;*/
+		}
+		h1{
+		  font-size:1em;
+		  text-align:center;
+		  color: #eee;
+		  letter-spacing:1px;
+		  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		}
+		.sidepanel{
+			margin-top:20px;
+			margin-left: 15px;
+			margin: 16px;
+			
+		}
+		.nav-tabs{
+			height:43px;
+		}
+		.nav-tabs >li{
+			background:grey;
+			width: 50%;
+		}
+		
+		.nav-tabs>li>a{
+			color:white !important;
+		}
+		.nav-tabs >li.active>a{
+			color:grey !important;
+		}
+		
+		.nav-tabs >li:hover{
+			background:grey;
+		}
+		.nav-tabs>li>a:hover{
+			color:grey !important;
+		}
+		.tab-content>.active {
+		min-height:200px;
+			height: auto;
+		}
+		.nav-container{
+			margin-top: 25px;
+			margin:20px;
+		  box-shadow: 0 2px 2px 2px black;
+		  transition: all 0.3s linear;
+		}
+		.sidenav{
+			background-color: grey;
+			margin-bottom: 0px;
+		}
+		
+		.nav{
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			  
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 600;
+		  }
+		  .nav > li{
+				border-bottom: 1px solid #F5F0F0;
+			}
+			.nav>li>a{
+			color:#847676;
+			}
+		  </style>
+		  <script>
+		  $('li').click(function(){
+		  
+		  $(this).addClass('active')
+			   .siblings()
+			   .removeClass('active');
+		});
+		  </script>
+		  
+		     <!--Side bar-->
+  
+  
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+	<div class="row">
+		<div class="header clearfix">
+			<div class="menu col-md-12">
+				<div  class="col-md-4">
+				<a href='#' ><span class="logo pull-left">Skypc</span></a>
+				</div>
+				<div  class="col-md-8">
+					<div id='cssmenu' class="pull-right">
+							<ul>
+							   <li class='active'><a href='#' ><span>Home</span></a></li>
+							   <li class='has-sub'><a href='#'><span>Products</span></a>
+								  <ul>
+									 <li class='has-sub'><a href='#'><span>Product 1</span></a>
+										<ul>
+										   <li><a href='#'><span>Sub Product</span></a></li>
+										   <li class='last'><a href='#'><span>Sub Product</span></a></li>
+										</ul>
+									 </li>
+									 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+										<ul>
+										   <li><a href='#'><span>Sub Product</span></a></li>
+										   <li class='last'><a href='#'><span>Sub Product</span></a></li>
+										</ul>
+									 </li>
+								  </ul>
+							   </li>
+							   <li><a href='#'><span>About</span></a></li>
+							   <li class='last'><a href='#'><span>Contact</span></a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</nav>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="http://www.prepbootstrap.com/Content/images/template/carouselstaticheader/slide_03.jpg" alt="First slide" />
+                        <div class="carousel-caption">
+                            <h3>Product A</h3>
+                            <p>
+                                Best Suitable for individuals...
+                            </p>
+                            <p><a class="btn btn-clear btn-sm btn-min-block" href="#">More Details</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://www.prepbootstrap.com/Content/images/template/carouselstaticheader/slide_02.jpg" alt="Second slide" />
+                        <div class="carousel-caption">
+                            <h3>Product B</h3>
+                            <p>
+                                Best Suitable for small businesses 
+                            </p>
+                            <p><a class="btn btn-clear btn-sm btn-min-block" href="#">More Details</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://www.prepbootstrap.com/Content/images/template/carouselstaticheader/slide_01.jpg" alt="Third slide" />
+                        <div class="carousel-caption">
+                            <h3>Product B</h3>
+                            <p>
+                                Best Suitable for small businesses 
+                            </p>
+                            <p><a class="btn btn-clear btn-sm btn-min-block" href="#">More Details</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+                    <span class="fa fa-arrow-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
+                    <span class="fa fa-arrow-right" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="main-text hidden-xs">
+                <div class="col-md-12 text-center">
+                    <h1>Affordable products</h1>
+                    <h3>Pick up the one that suits you best
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+.main-text {
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-clear {
+    color: #FFF;
+    border-color: #FFF;
+    border-width: 2px;
+    margin-right: 15px;
+}
+
+.btn-clear:hover {
+    color: #000;
+    background-color: #6699CC;
+}
+
+.arrowalign {
+    top: 50%;
+}
+
+.arrowalign:hover {
+    vertical-align: middle;
+}
+
+.carousel-control {
+    color: #fff;
+    top: 50%;
+    bottom: auto;
+    padding-top: 0px;
+    width: 30px;
+    height: 30px;
+    text-shadow: none;
+    opacity: 0.9;
+}
+</style>
+
+
+<div class="container">
+
+
+	<div class="row wrap">
+    <div class="col-sm-3">
+			<div class="row">
+				<div class="nav-container ">
+			
+					<div class="panel panel-default sidenav" style="background-color:grey"><h1>SideBar</h1></div>
+					  <ul class="nav">
+						<li class="active">
+						  <a href="#"><span class="glyphicon glyphicon-home"></span><span class="text">home</span></a>
+						</li>
+						<li>
+						  <a href="#"><span class="glyphicon glyphicon-info-sign"></span><span class="text">about</span></a>
+						  </li>
+						<li>
+						  <a href="#"><span class="glyphicon glyphicon-headphones"></span><span class="text">Audio</span></a>
+						  </li>
+						<li>
+						  <a href="#"><span class="glyphicon glyphicon-folder-close"></span><span class="text">Portfolio</span></a>
+						</li>
+						<li>
+						  <a href="#"><span class="glyphicon glyphicon-film"></span><span class="text">video</span></a>
+						</li>
+					  </ul>
+					</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+								
+			
+							<div class="panel panel-default">
+								<div class="panel-heading">News</div>
+								<div class="panel-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+								</div>
+								<div class="text-center">
+									<a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">News</div>
+								<div class="panel-body">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+								</div>
+								<div class="text-center">
+									<a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			
+			
+			
+			
+    <div class="col-sm-6">
+	
+	
+    <div class="row">
+        <div class="well">
+            <h1 class="text-center">Today's Blogposts</h1>
+            <div class="list-group">
+                    <div class="list-group-item clearfix">
+                        <h4 class="list-group-item-heading">Blog Title</h4>
+                        <p class="list-group-item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec sem molestie, tempor libero eu, placerat purus. 
+                            Donec eget iaculis elit. Nam eget consectetur quam. Nam viverra ornare diam. In a ornare diam. 
+                            Quisque vestibulum nulla nec facilisis malesuada. 
+                            Proin at lobortis risus. Vivamus tristique eros vel cursus malesuada. 
+                            Vivamus volutpat, sem nec venenatis iaculis, metus felis interdum mi, et venenatis felis mi at eros. 
+                            Phasellus vel massa nisi. Fusce ut vehicula nunc. Nullam egestas eros risus, eu fringilla odio lacinia ac. 
+                            Fusce placerat a dolor et tincidunt. 
+                            Pellentesque tristique nunc et nibh scelerisque euismod. 
+                            Sed tristique arcu sit amet nulla auctor ultricies.
+                        </p>
+						<a href="#" class="btn btn-success pull-right lower">Read More</a>
+                    </div>
+                    <div class="list-group-item clearfix">
+                        <h4 class="list-group-item-heading">Blog Title</h4>
+                        <p class="list-group-item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec sem molestie, tempor libero eu, placerat purus. 
+                            Donec eget iaculis elit. Nam eget consectetur quam. Nam viverra ornare diam. In a ornare diam. 
+                            Quisque vestibulum nulla nec facilisis malesuada. 
+                            Proin at lobortis risus. Vivamus tristique eros vel cursus malesuada. 
+                            Vivamus volutpat, sem nec venenatis iaculis, metus felis interdum mi, et venenatis felis mi at eros. 
+                            Phasellus vel massa nisi. Fusce ut vehicula nunc. Nullam egestas eros risus, eu fringilla odio lacinia ac. 
+                            Fusce placerat a dolor et tincidunt. 
+                            Pellentesque tristique nunc et nibh scelerisque euismod. 
+                            Sed tristique arcu sit amet nulla auctor ultricies.
+                        </p>
+						<a href="#" class="btn btn-success pull-right lower">Read More</a>
+                    </div>
+                    <div class="list-group-item clearfix">
+                        <h4 class="list-group-item-heading">Blog Title </h4>
+                        <p class="list-group-item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec sem molestie, tempor libero eu, placerat purus. 
+                            Donec eget iaculis elit. Nam eget consectetur quam. Nam viverra ornare diam. In a ornare diam. 
+                            Quisque vestibulum nulla nec facilisis malesuada. 
+                            Proin at lobortis risus. Vivamus tristique eros vel cursus malesuada. 
+                            Vivamus volutpat, sem nec venenatis iaculis, metus felis interdum mi, et venenatis felis mi at eros. 
+                            Phasellus vel massa nisi. Fusce ut vehicula nunc. Nullam egestas eros risus, eu fringilla odio lacinia ac. 
+                            Fusce placerat a dolor et tincidunt. 
+                            Pellentesque tristique nunc et nibh scelerisque euismod. 
+                            Sed tristique arcu sit amet nulla auctor ultricies.
+                        </p>
+						
+					<a href="#" class="btn btn-success pull-right lower">Read More</a>
+						
+                    </div>
+            </div>
+        </div>
+</div>
+
+<style>
+.blogicon {
+    font-size: 217px;
+    color:#5CB85C;
+}
+
+.ratetext {
+    font-size: 37px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.votes {
+    font-size: 47px;
+    padding-right: 20px;
+    color:#197BB5;
+}
+
+a.list-group-item {
+    height: auto;
+    min-height: 250px;
+}
+
+a.list-group-item:hover, a.list-group-item:focus {
+    border-left:10px solid #5CB85C;
+    border-right:10px solid #5CB85C;
+}
+
+a.list-group-item {
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+}
+
+.well{
+    padding: 5px;
+    margin-top: 20px;
+}
+
+</style>
+	
+	
+	
+				
+				<div class="row">
+            <div class="col-xs-12">
+                <h2>Article Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                </p>
+                <div class="text-center">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 12 Comments</a>
+                    <a href="#"><span class="glyphicon glyphicon-share"></span> 11 Shares</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Article Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                </p>
+                <div class="text-center">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 2 Comments</a>
+                    <a href="#"><span class="glyphicon glyphicon-share"></span> 211 Shares</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Article Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                </p>
+                <div class="text-center">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 7 Comments</a>
+                    <a href="#"><span class="glyphicon glyphicon-share"></span> 67 Shares</a>
+                </div>
+            </div>
+        </div>
+	
+			  
+        <div class="row style_featured">
+            <div class="col-md-4">
+                <div>
+                    <img src="http://www.prepbootstrap.com/Content/images/template/featureditems/product_001.jpg" alt="" class="img-rounded img-thumbnail" />
+                    <h2>Item A</h2>
+                    <p style="text-align: left;">
+                        <span class="fa fa-info-circle"></span>
+                        A quality item for purchase. Features state of the art technology
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-bank "></span>
+                        0% Financing available
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-calendar "></span>
+                        12 months full warranty
+                    </p>
+                    <a href="#" class="btn btn-success" title="More">more »</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <img src="http://www.prepbootstrap.com/Content/images/template/featureditems/product_002.jpg" alt="" class="img-rounded img-thumbnail"/>
+                    <h2>Item A</h2>
+                    <p style="text-align: left;">
+                        <span class="fa fa-info-circle"></span>
+                        A quality item for purchase. Features state of the art technology
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-bank "></span>
+                        0% Financing available
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-calendar "></span>
+                        21 months full warranty
+                    </p>
+                    <a href="#" class="btn btn-success" title="More">more »</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <img src="http://www.prepbootstrap.com/Content/images/template/featureditems/product_003.jpg" alt="" class="img-rounded img-thumbnail"/>
+                    <h2>Item A</h2>
+                    <p style="text-align: left;">
+                        <span class="fa fa-info-circle"></span>
+                        A quality item for purchase. Features state of the art technology
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-bank "></span>
+                        0% Financing available
+                    </p>
+                    <p style="text-align: left;">
+                        <span class="fa fa-calendar "></span>
+                        4 months full warranty
+                    </p>
+                    <a href="#" class="btn btn-success" title="More">more »</a>
+                </div>
+            </div>
+        </div>
+
+<style>
+.style_featured{
+    padding: 20px 0;
+    text-align: center;
+}
+.style_featured > div > div{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.style_featured > div:hover > div{
+    margin-top: +19px;
+    border: 1px solid rgb(153, 200, 250);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 9px 9px 9px;
+    background: rgba(153, 200, 250, 0.1);
+    transition: 0.99s;
+}
+</style>
+	
+	
+	
+		<div class="row">
+        <div class="col-sm-4">
+            <img class="img-circle img-responsive text-center" alt="Bootstrap template" src="http://placehold.it/300x300">
+            <h2>Product 1</h2>
+            <p>
+                Product descriptions must focus on the provided keyword and be no less than 100 words.
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle img-responsive" alt="Bootstrap template" src="http://placehold.it/300x300">
+            <h2>Product 2</h2>
+            <p>
+                Put your TV viewing into overdrive with scenes that jump off your screen when you add 
+                3D HDTVs to your home-theater system. 
+            </p>
+        </div>
+        <div class="col-sm-4">
+            <img class="img-circle img-responsive" alt="Bootstrap template" src="http://placehold.it/300x300">
+            <h2>Product 3</h2>
+            <p>
+                Spark your child’s imagination with Olive Kids twin sheet sets. 
+            </p>
+        </div>
+    </div>
+	
+
+<div class="container">
+	<div class="row">
+		<table class="table table-hover">
+		 <thead>
+				<tr>
+					<td>Id</td>
+					<td>Title</td>
+					<td> Time</td>
+					<td> Action</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><span class="controls" id="playToggle"></span></td>
+					<td><span class="title">Flu Gi — Mum</span></td>
+					<td><span class="minus">-</span><span id="timeleft">3:17</span></td>
+					<td> Action</td>
+				</tr>
+				<tr>
+					<td>Id</td>
+					<td>Title</td>
+					<td> Time</td>
+					<td> Action</td>
+				</tr>
+				<tr>
+					<td>Id</td>
+					<td>Title</td>
+					<td> Time</td>
+					<td> Action</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	
+	
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Article Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                </p>
+                <div class="text-center">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 12 Comments</a>
+                    <a href="#"><span class="glyphicon glyphicon-share"></span> 11 Shares</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Article Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+                </p>
+                <div class="text-center">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 2 Comments</a>
+                    <a href="#"><span class="glyphicon glyphicon-share"></span> 211 Shares</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Article Title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                </p>
+                <div class="text-center">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span> Full Story</a>
+                    <a href="#"><span class="glyphicon glyphicon-comment"></span> 7 Comments</a>
+                    <a href="#"><span class="glyphicon glyphicon-share"></span> 67 Shares</a>
+                </div>
+            </div>
+        </div>
+        <hr />
+    </div>
+	<div class="col-sm-3">
+		<div class="row">
+		
+				<!--Nepali Calender-->
+				<div class="sidepanel">
+						<h3>Nepali Calendar</h3>
+							<div class="textwidget">
+								<iframe src="http://www.ashesh.com.np/calendarlink/calendar-ashesh.html" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:262px; height:166px;" allowtransparency="true"></iframe>
+							</div>
+							
+						<div class="textwidget"><!-- Start of upcoming event widget -->
+							<script type="text/javascript"> <!--
+							var nc_ev_width = 'responsive';
+							var nc_ev_height = 303;
+							var nc_ev_def_lan = 'np';
+							var nc_ev_api_id = 'nc'; //-->
+							</script>
+							<script type="text/javascript" src="http://www.ashesh.com.np/calendar-event/ev.js"></script>
+							<!--<iframe id="ev_nciframe" src="http://www.ashesh.com.np/calendar-event/event.html" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" style="border:none; overflow:hidden; width:100%; height:303px;" allowtransparency="true"></iframe>-->
+							<style type="text/css">#ncwidgetlink{color:#6D6D6D; font-size:9px;}#ncwidgetlink a:link, #ncwidgetlink a:visited{color:#6D6D6D; text-decoration:none;} #nclink{font-size:9px;}</style>
+							<!-- End of upcoming event widget -->
+						</div>
+						
+					
+							
+				<div class="panel panel-default">
+				
+				
+				<!-- Custom Tabs -->
+						  <div class="nav-tabs-custom">
+							<ul class="nav nav-tabs">
+							  <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">Audio</a></li>
+							  <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Video</a></li>
+							</ul>
+							<div class="tab-content">
+							  <div class="tab-pane active" id="tab_1">
+								<ul class="playlist">
+									
+									<li>
+									  <div class="track">
+										<span class="controls" id="playToggle"></span>
+										<span class="title">Flu Gi — Mum</span>
+										<span class="minus">-</span>
+										<span id="timeleft">3:17</span>
+									  </div>
+									  <audio>
+										<source src="music/audio/mum.mp3" type="audio/mp3" />
+										<source src="music/audio/mum.ogg" type="audio/ogg" />
+										Your browser does not support the <code>audio</code> element.
+									  </audio>
+									</li>
+									<li>
+									  <div class="track">
+										<span class="controls" id="playToggle"></span>
+										<span class="title">Flu Gi — Speed</span>
+										<span class="minus">-</span>
+										<span id="timeleft">2:35</span>
+									  </div>
+									  <audio>
+										<source src="music/audio/speed.mp3" type="audio/mp3" />
+										<source src="music/audio/speed.ogg" type="audio/ogg" />
+										Your browser does not support the <code>audio</code> element.
+									  </audio>
+									</li>
+									<li>
+									  <div class="track">
+										<span class="controls" id="playToggle"></span>
+										<span class="title">Flu Gi — TOP90 (radio)</span>
+										<span class="minus">-</span>
+										<span id="timeleft">2:50</span>
+									  </div>
+									  <audio>
+										<source src="music/audio/top90(radio).mp3" type="audio/mp3" />
+										<source src="music/audio/top90(radio).ogg" type="audio/ogg" />
+										Your browser does not support the <code>audio</code> element.
+									  </audio>
+									</li>
+									<li>
+									  <div class="track">
+										<span class="controls" id="playToggle"></span>
+										<span class="title">Flu Gi — Speed</span>
+										<span class="minus">-</span>
+										<span id="timeleft">2:35</span>
+									  </div>
+									  <audio>
+										<source src="music/audio/speed.mp3" type="audio/mp3" />
+										<source src="music/audio/speed.ogg" type="audio/ogg" />
+										Your browser does not support the <code>audio</code> element.
+									  </audio>
+									</li>
+									<li>
+									  <div class="track">
+										<span class="controls" id="playToggle"></span>
+										<span class="title">Flu Gi — Mum</span>
+										<span class="minus">-</span>
+										<span id="timeleft">3:17</span>
+									  </div>
+									  <audio>
+										<source src="music/audio/mum.mp3" type="audio/mp3" />
+										<source src="music/audio/mum.ogg" type="audio/ogg" />
+										Your browser does not support the <code>audio</code> element.
+									  </audio>
+									</li>
+									<li>
+									  <div class="track">
+										<span class="controls" id="playToggle"></span>
+										<span class="title">Flu Gi — Mum</span>
+										<span class="minus">-</span>
+										<span id="timeleft">3:17</span>
+									  </div>
+									  <audio>
+										<source src="music/audio/mum.mp3" type="audio/mp3" />
+										<source src="music/audio/mum.ogg" type="audio/ogg" />
+										Your browser does not support the <code>audio</code> element.
+									  </audio>
+									</li>
+								  </ul>
+								  
+								   <script type="text/javascript">
+									$(document).ready(function() {
+										$(".playlist").playlist();
+										
+										//$('li:not(:last)').addClass('test');
+									});
+								  </script>
+							  </div><!-- /.tab-pane -->
+							  <div class="tab-pane" id="tab_2">
+												<video id="videoarea" controls="controls" poster="" src=""></video>
+												<ul id="playlist">
+													<li class="controls" id="playToggle" movieurl="http://html5videoformatconverter.com/data/images/happyfit2.mp4" moviesposter="http://html5videoformatconverter.com/data/images/screen.jpg"><span >Happy Fit</span></li>
+													<li class="controls" id="playToggle" movieurl="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4"><span >Sintel</span></li>     
+													<li class="controls" id="playToggle" movieurl="http://www.ioncannon.net/examples/vp8-webm/big_buck_bunny_480p.webm"><span >Big Buck Bunny</span></li>
+												</ul>
+							  </div><!-- /.tab-pane -->
+							  <style>
+											#playlist {
+												display:table;
+												width:100%;
+											}
+											#playlist >li >span{
+												margin-left: 20px;
+											}
+											
+											#playlist >li.controls{
+												background: url('music/images/play.png') no-repeat 0;
+												vertical-align: bottom;
+												cursor: pointer;
+											}
+											#playlist li{
+												cursor:pointer;
+												list-style:none;
+												margin-left: -30px;
+											}
+
+											#playlist li:hover{
+												color:blue;                        
+											}
+											#videoarea {
+												float:left;
+												width:100%; 
+												border:1px solid silver;
+											}
+
+										</style>
+										<script>
+											$(function() {
+												$("#playlist li").on("click", function() {
+													$("#videoarea").attr({
+														"src": $(this).attr("movieurl"),
+														"poster": "",
+														"autoplay": "autoplay"
+													})
+												})
+												$("#videoarea").attr({
+													"src": $("#playlist li").eq(0).attr("movieurl"),
+													"poster": $("#playlist li").eq(0).attr("moviesposter")
+												})
+											})
+										</script>
+							</div><!-- /.tab-content -->
+						  </div><!-- nav-tabs-custom -->
+				
+				</div>
+		</div>
+	</div>
+	</div>
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-9">
+                <h3>Products Showcase using carousel and Bootstrap</h3>
+            </div>
+            <div class="col-md-3">
+                <!-- Controls -->
+                <div class="controls pull-right hidden-xs">
+                    <a class="left fa fa-chevron-left btn btn" href="#carousel-example"
+                        data-slide="prev"></a><a class="right fa fa-chevron-right btn" href="#carousel-example"
+                            data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+        <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product A</h5>
+                                            <h5 class="price-text-color">$7.99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_001.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product B</h5>
+                                            <h5 class="price-text-color">$9.99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_002.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product C</h5>
+                                            <h5 class="price-text-color">$7.58</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_003.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Another product</h5>
+                                            <h5 class="price-text-color">$3.75</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_001.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product</h5>
+                                            <h5 class="price-text-color">$7.17</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_001.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product</h5>
+                                            <h5 class="price-text-color">$19.99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_002.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product</h5>
+                                            <h5 class="price-text-color">$1.99</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_003.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="col-item">
+                                <div class="info">
+                                    <div class="row">
+                                        <div class="price col-md-6">
+                                            <h5>Product</h5>
+                                            <h5 class="price-text-color">$1.09</h5>
+                                        </div>
+                                        <div class="rating hidden-sm col-md-6">
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                            <i class="price-text-color fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="http://www.prepbootstrap.com/Content/images/template/productslider/product_001.jpg" class="img-responsive" alt="a" />
+                                </div>
+                                <div class="info">
+                                    <div class="separator clear-left">
+                                        <p class="btn-add">
+                                            <i class="fa fa-shopping-cart"></i><a href="#" class="hidden-sm">Add to cart</a>
+                                        </p>
+                                        <p class="btn-details">
+                                            <i class="fa fa-list"></i><a href="#" class="hidden-sm">More details</a>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.col-item
+{
+    border: 2px solid #2323A1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.col-item .photo img
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info
+{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+.col-item:hover .info {
+    background-color: rgba(215, 215, 244, 0.5); 
+}
+.col-item .price
+{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5
+{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color
+{
+    color: #00990E;
+}
+
+.col-item .info .rating
+{
+    color: #003399;
+}
+
+.col-item .rating
+{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator
+{
+    border-top: 1px solid #FFCCCC;
+}
+
+.clear-left
+{
+    clear: left;
+}
+
+.col-item .separator p
+{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i
+{
+    margin-right: 5px;
+}
+.col-item .btn-add
+{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add
+{
+    border-right: 1px solid #CC9999;
+}
+
+.col-item .btn-details
+{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls
+{
+    margin-top: 20px;
+}
+[data-slide="prev"]
+{
+    margin-right: 10px;
+}
+</style>
+
+
+
+
+
+<div class="container">
+    <br />
+    <br />
+    <br />
+
+    <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        This section contains a wealth of information, related to <strong>PrepBootstrap</strong> and its store. If you cannot find an answer to your question, 
+        make sure to contact us. 
+    </div>
+
+    <br />
+
+    <div class="panel-group" id="accordion">
+        <div class="faqHeader">General questions</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    Account registration at <strong>PrepBootstrap</strong> is only required if you will be selling or buying themes. 
+                    This ensures a valid communication channel for all parties involved in any transactions. 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Can I submit my own Bootstrap templates or themes?</a>
+                </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse">
+                <div class="panel-body">
+                    A lot of the content of the site has been submitted by the community. Whether it is a commercial element/template/theme 
+                    or a free one, you are encouraged to contribute. All credits are published along with the resources. 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">What is the currency used for all transactions?</a>
+                </h4>
+            </div>
+            <div id="collapseEleven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    All prices for themes, templates and other items, including each seller's or buyer's account balance are in <strong>USD</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="faqHeader">Sellers</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Who cen sell items?</a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Any registed user, who presents a work, which is genuine and appealing, can post it on <strong>PrepBootstrap</strong>.
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">I want to sell my items - what are the steps?</a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    The steps involved in this process are really simple. All you need to do is:
+                    <ul>
+                        <li>Register an account</li>
+                        <li>Activate your account</li>
+                        <li>Go to the <strong>Themes</strong> section and upload your theme</li>
+                        <li>The next step is the approval step, which usually takes about 72 hours.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">How much do I get from each sale?</a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Here, at <strong>PrepBootstrap</strong>, we offer a great, 70% rate for each seller, regardless of any restrictions, such as volume, date of entry, etc.
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Why sell my items here?</a>
+                </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                    There are a number of reasons why you should join us:
+                    <ul>
+                        <li>A great 70% flat rate for your items.</li>
+                        <li>Fast response/approval times. Many sites take weeks to process a theme or template. And if it gets rejected, there is another iteration. We have aliminated this, and made the process very fast. It only takes up to 72 hours for a template/theme to get reviewed.</li>
+                        <li>We are not an exclusive marketplace. This means that you can sell your items on <strong>PrepBootstrap</strong>, as well as on any other marketplate, and thus increase your earning potential.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">What are the payment options?</a>
+                </h4>
+            </div>
+            <div id="collapseEight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    The best way to transfer funds is via Paypal. This secure platform ensures timely payments and a secure environment. 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">When do I get paid?</a>
+                </h4>
+            </div>
+            <div id="collapseNine" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Our standard payment plan provides for monthly payments. At the end of each month, all accumulated funds are transfered to your account. 
+                    The minimum amount of your balance should be at least 70 USD. 
+                </div>
+            </div>
+        </div>
+
+        <div class="faqHeader">Buyers</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">I want to buy a theme - what are the steps?</a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Buying a theme on <strong>PrepBootstrap</strong> is really simple. Each theme has a live preview. 
+                    Once you have selected a theme or template, which is to your liking, you can quickly and securely pay via Paypal.
+                    <br />
+                    Once the transaction is complete, you gain full access to the purchased product. 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Is this the latest version of an item</a>
+                </h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Each item in <strong>PrepBootstrap</strong> is maintained to its latest version. This ensures its smooth operation.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+</style>
+
+	
+			
+<div class="container" id="cnt1">
+    <div class="row feature">
+        <div class="col-md-4">
+            <div>
+                <img src="http://lorempixel.com/200/200/city/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                <h2>Admin Portal</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
+                       tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
+                       Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
+                       Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
+                       Proin gravida turpis consequat porta condimentum. 
+                       Nam consequat ultricies elit nec consectetur.                        
+                </p>
+                <a href="#" class="btn btn-success lower">See Feature details</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div>
+                <img src="http://lorempixel.com/200/200/city/2/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                <h2>Project Portfolio</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
+                      tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
+                      Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
+                      Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
+                      Proin gravida turpis consequat porta condimentum. 
+                      Nam consequat ultricies elit nec consectetur.       
+                </p>
+                <a href="#" class="btn btn-success lower">See Feature details</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div>
+                <img src="http://lorempixel.com/200/200/city/3/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+                <h2>Personal Website</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, urna id vestibulum viverra, 
+                       tellus felis rutrum erat, sit amet ultrices orci urna sit amet nunc. 
+                       Fusce ut fringilla sem. Curabitur eget est vitae nulla eleifend ullamcorper et laoreet odio. 
+                       Duis condimentum feugiat sollicitudin. Sed non lacinia turpis. 
+                       Proin gravida turpis consequat porta condimentum. 
+                       Nam consequat ultricies elit nec consectetur.       
+                </p>
+                <a href="#" class="btn btn-success lower">See Feature details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+ #cnt1 { 
+     width:100%;
+     margin-bottom:70px;
+ }
+  
+ .feature{
+     padding: 20px 0;
+    text-align: center;
+ }
+ .feature > div > div{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+ }
+ .feature > div:hover > div{
+    margin-top: -10px;
+    border: 1px solid rgb(128, 128, 128);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 5px;
+    background: rgba(232, 215, 215, 0.10);
+    transition: 0.3s;
+ }
+</style>
+
+	
+
+
+
+
+
+</body>
+</html>
